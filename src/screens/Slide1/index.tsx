@@ -37,7 +37,7 @@ export function Slide1({altera}:troca) {
             </TouchableHighlight>
              <View>
             {Images.map(json => (
-                <ImgDesc url={json.url} desc={json.desc}/>         
+                <ImgDesc url={json.url} desc={json.desc} key={json.desc}/>         
             ))}
             </View>
 
